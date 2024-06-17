@@ -1,13 +1,10 @@
 import React from 'react';
 
 function GenreFilter({ genres, onGenreSelect }) {
-  // console.log(genres)
-  // console.log(onGenreSelect)
   return (
-    <>
-  <div className="border border-solid-600">
-        <h2 className="text-xl font-bold mb-2 text-center">Genres</h2>
-      <div className="p-10rem flex justify-center p-2 ">
+    <div className="border border-solid-600">
+      <h2 className="text-xl font-bold mb-2 text-center">Genres</h2>
+      <div className="p-10rem flex justify-center p-2">
         <div className="flex flex-wrap gap-2">
           {genres.map(genre => (
             <button
@@ -20,8 +17,7 @@ function GenreFilter({ genres, onGenreSelect }) {
           ))}
         </div>
       </div>
-      </div>
-    </>
+    </div>
   );
 }
 
